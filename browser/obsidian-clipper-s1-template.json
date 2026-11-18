@@ -1,0 +1,41 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "S1",
+	"behavior": "create",
+	"noteContentFormat": "# [{{title}}]({{url}})\n\n#clip\n\n{{content}}\n",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "clip",
+			"type": "multitext"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "modified",
+			"value": "{{date}}",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\\\", \\\"|wikilink|join}}",
+			"type": "multitext"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{title}}",
+	"path": "Saved"
+}
