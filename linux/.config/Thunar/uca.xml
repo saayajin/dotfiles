@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1764904717111721-2</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>vscodium</icon>
+	<name>Open Folder in VSCodium</name>
+	<submenu></submenu>
+	<unique-id>1775785806647919-1</unique-id>
+	<command>codium %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>document-preview-archive</icon>
+	<name>Preview</name>
+	<submenu></submenu>
+	<unique-id>1764904413760537-1</unique-id>
+	<command>gloobus-preview %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+</action>
+<action>
+	<icon>text-x-markdown</icon>
+	<name>Preview Markdown</name>
+	<submenu></submenu>
+	<unique-id>1765682788105395-1</unique-id>
+	<command>xfce4-terminal -T glow -x glow -t %f</command>
+	<description></description>
+	<range>1</range>
+	<patterns>*.md;*.MD</patterns>
+	<text-files/>
+</action>
+<action>
+	<icon>sc-apps-git</icon>
+	<name>Open in LazyGit</name>
+	<submenu></submenu>
+	<unique-id>1765866377751359-18</unique-id>
+	<command>xfce4-terminal -T lazygit -x lazygit -p %d</command>
+	<description></description>
+	<range>*</range>
+	<patterns>.git</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>edit-clear-history</icon>
+	<name>Reset Git Branch</name>
+	<submenu></submenu>
+	<unique-id>1765865977789131-17</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/git-reset-branch.sh %D</command>
+	<description></description>
+	<range>*</range>
+	<patterns>.git</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>vcs-diff</icon>
+	<name>Compare</name>
+	<submenu></submenu>
+	<unique-id>1765859297848862-5</unique-id>
+	<command>meld %F</command>
+	<description></description>
+	<range>2-3</range>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>image-x-generic</icon>
+	<name>Compress jpg</name>
+	<submenu></submenu>
+	<unique-id>1765856257899034-3</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/jpg-compress.sh %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.jpg;*.JPG;*.jpeg;*.JPEG</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-x-generic</icon>
+	<name>Compress png</name>
+	<submenu></submenu>
+	<unique-id>1765859740939019-7</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/png-compress.sh %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.png;*.PNG</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>gtk-convert</icon>
+	<name>Convert to jpg</name>
+	<submenu></submenu>
+	<unique-id>1765859494193779-6</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/jpg-convert.sh %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>gtk-convert</icon>
+	<name>Convert to png</name>
+	<submenu></submenu>
+	<unique-id>1765859079215698-4</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/png-convert.sh %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>view-bank-account-checking</icon>
+	<name>Check Video Integrity</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1765862747207238-13</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/video-check.sh %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mp4 AVC</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1765860757568910-8</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-compress-avc.sh %F</command>
+	<description>crf 22</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mp4 AVC HDR</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505130371297-1</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-compress-avc-hdr.sh %F</command>
+	<description>crf 20</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mp4 AVC VFR</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505251785687-2</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-compress-vfr.sh %F</command>
+	<description>crf 20</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mp4 AVC VFR HDR</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505283122223-3</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-compress-avc-vfr-hdr.sh %F</command>
+	<description>crf 18</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mp4 HEVC</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1765861278935919-9</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-compress-hevc.sh %F</command>
+	<description>crf 26</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mp4 HEVC HDR</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505315798499-4</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-compress-hevc-hdr.sh %F</command>
+	<description>crf 24</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mp4 HEVC VFR</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505341060598-5</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-compress-hevc-vfr.sh %F</command>
+	<description>crf 24</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mp4 HEVC VFR HDR</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505372196488-6</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-compress-hevc-vfr-hdr.sh %F</command>
+	<description>crf 22</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 AVC (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1765861895088175-10</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-1080p-avc.sh %F</command>
+	<description>crf 22</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 AVC HDR (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505406906240-7</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-1080p-avc-hdr.sh %F</command>
+	<description>crf 20</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 AVC VFR (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505433304806-8</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-1080p-avc-vfr.sh %F</command>
+	<description>crf 20</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 AVC VFR HDR (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505459406809-9</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-1080p-avc-vfr-hdr.sh %F</command>
+	<description>crf 18</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 AVC (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1765861933687201-11</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-720p-avc.sh %F</command>
+	<description>crf 21</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 AVC HDR (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505484565536-10</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-720p-avc-hdr.sh %F</command>
+	<description>crf 19</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 AVC VFR (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505512483224-11</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-720p-avc-vfr.sh %F</command>
+	<description>crf 19</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 AVC VFR HDR (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505535394261-12</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-720p-avc-vfr-hdr.sh %F</command>
+	<description>crf 17</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 HEVC (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505569390343-13</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-1080p-hevc.sh %F</command>
+	<description>crf 26</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 HEVC HDR (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505621203251-14</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-1080p-hevc-hdr.sh %F</command>
+	<description>crf 24</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 HEVC VFR (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505646450642-15</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-1080p-hevc-vfr.sh %F</command>
+	<description>crf 24</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 HEVC VFR HDR (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505669239158-16</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-1080p-hevc-vfr-hdr.sh %F</command>
+	<description>crf 22</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 HEVC (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505694887324-17</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-720p-hevc.sh %F</command>
+	<description>crf 25</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 HEVC HDR (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505719927492-18</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-720p-hevc-hdr.sh %F</command>
+	<description>crf 23</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 HEVC VFR (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505744481903-19</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-720p-hevc-vfr.sh %F</command>
+	<description>crf 23</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mp4 HEVC VFR HDR (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505774321781-20</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp4-resize-720p-hevc-vfr-hdr.sh %F</command>
+	<description>crf 21</description>
+	<range>*</range>
+	<patterns>*.mp4;*.MP4</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mkv AVC</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1768615013392424-1</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-compress-avc.sh %F</command>
+	<description>crf 22</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mkv AVC HDR</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505836808077-21</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-compress-avc-hdr.sh %F</command>
+	<description>crf 20</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mkv HEVC</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1768615145703909-2</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-compress-hevc.sh %F</command>
+	<description>crf 26</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Compress mkv HEVC HDR</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505939918833-23</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-compress-hevc-hdr.sh %F</command>
+	<description>crf 24</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mkv AVC (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1768615247654923-3</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-resize-1080p-avc.sh %F</command>
+	<description>crf 22</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mkv AVC HDR (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505967148943-24</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-resize-1080p-avc-hdr.sh %F</command>
+	<description>crf 20</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mkv AVC (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1768615357179379-4</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-resize-720p-avc.sh %F</command>
+	<description>crf 21</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mkv AVC HDR (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793505995258550-25</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-resize-720p-avc-hdr.sh %F</command>
+	<description>crf 19</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mkv HEVC (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793506019235560-26</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-resize-1080p-hevc.sh %F</command>
+	<description>crf 26</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mkv HEVC HDR (1080p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793506046162388-27</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-resize-1080p-hevc-hdr.sh %F</command>
+	<description>crf 24</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mkv HEVC (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793506074943478-28</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-resize-720p-hevc.sh %F</command>
+	<description>crf 25</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Resize mkv HEVC HDR (720p)</name>
+	<submenu>FFmpeg</submenu>
+	<unique-id>1793506089919400-29</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mkv-resize-720p-hevc-hdr.sh %F</command>
+	<description>crf 23</description>
+	<range>*</range>
+	<patterns>*.mkv;*.MKV</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>transform-crop-and-resize</icon>
+	<name>Crop Cover</name>
+	<submenu></submenu>
+	<unique-id>1765864773036993-14</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp3-crop-cover.sh %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon>xml-attribute-delete</icon>
+	<name>Delete Tags</name>
+	<submenu></submenu>
+	<unique-id>1765864926156250-15</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/mp3-delete-tags.sh %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon>youtube-indicator-downloading-light</icon>
+	<name>Get URL List</name>
+	<submenu></submenu>
+	<unique-id>1765864972692042-16</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/music-url-list.sh %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon>application-pdf</icon>
+	<name>Compress pdf</name>
+	<submenu></submenu>
+	<unique-id>1769470498705910-1</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/pdf-compress.sh %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.pdf;*.PDF</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>searching</icon>
+	<name>Search Files in Folder</name>
+	<submenu></submenu>
+	<unique-id>1767729999808752-2</unique-id>
+	<command>fsearch -s %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>baobab</icon>
+	<name>Disk Usage</name>
+	<submenu></submenu>
+	<unique-id>1765867456208454-19</unique-id>
+	<command>baobab %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>folder-locked</icon>
+	<name>File Locksmith</name>
+	<submenu></submenu>
+	<unique-id>1767729954389807-1</unique-id>
+	<command>xfce4-terminal -x $HOME/Documents/Scripts/Thunar/file-locksmith.sh %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+</action>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu>Root</submenu>
+	<unique-id>1765867671463927-20</unique-id>
+	<command>pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dbus-launch xfce4-terminal --working-directory=%f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>thunar</icon>
+	<name>Open Thunar Here</name>
+	<submenu>Root</submenu>
+	<unique-id>1765867848736035-21</unique-id>
+	<command>pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dbus-launch thunar %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>helix</icon>
+	<name>Edit as Root</name>
+	<submenu></submenu>
+	<unique-id>1765867924759708-22</unique-id>
+	<command>pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dbus-launch xfce4-terminal -T helix -x helix %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+</actions>
